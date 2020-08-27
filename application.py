@@ -15,7 +15,7 @@ from helpers import lookup, apology, login_required
 app = Flask(__name__)
 
 # Set the secret key to some random bytes. Keep this really secret!
-app.secret_key = b'F\x8eV\xe4y\xabk?\xc2m\x82\xb5\x10\xbfL\xea'
+app.secret_key = ['WRITE YOUR SECRET KEY']
 
 # Ensure templates are auto-reloaded
 app.config["TEMPLATES_AUTO_RELOAD"] = True
@@ -36,7 +36,7 @@ def after_request(response):
 #Session(app)
 
 # Configure CS50 Library to use SQLite database
-db = SQL("postgres://kcljriopkqstnn:772e48fc5ad6f7776e303f01f2fb9f0f1e95347d277daf466d715a6db7635e5a@ec2-54-246-87-132.eu-west-1.compute.amazonaws.com:5432/ddt45nfgtfdhke")
+db = SQL("sqlite:///diary.db")
 
 
 @app.route("/", methods=["GET"])
