@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Covid-19 Informations
+{% endblock %}
+
+{% block main %}
+<h1>Search for informations about a country</h1>
+<form action="/information" method="post">
+    <div class="form-group">
+        <input required autocomplete="off" autofocus class="form-control" name="country" placeholder="Country"
+            type="text">
+    </div>
+    <button class="btn btn-primary" type="submit">Search</button>
+</form>
+</form>
+{% endblock %}

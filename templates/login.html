@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- W3 School and Font-Awesome CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+
+    <!-- Register Stylesheet CSS -->
+    <link href="/static/login.css" rel="stylesheet">
+
+    <title>Covid-19 Diary: Login</title>
+
+</head>
+
+<body>
+    <div class="signup-form">
+        <form action="/login" method="post">
+            <h1>Login</h1>
+            <input required maxlength="16" autocomplete="off" autofocus name="username" type="username"
+                placeholder="Username" class="txtb">
+            <input required min="8" name="password" type="password" placeholder="Password" class="txtb">
+            <input type="submit" value="Login" class="signup-btn">
+            <a href="/register">Create an account</a>
+            <a href="/change">Change your password</a>
+        </form>
+    </div>
+
+ <!-- Display flash message with Jinja -->
+    {% if get_flashed_messages() %}
+    <header>
+        <div class="alert alert-primary border text-center" role="alert">
+            {{ get_flashed_messages() | join(" ") }}
+        </div>
+    </header>
+    {% endif %}
+
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+<link href="/static/hero.css" rel="stylesheet">
+
+{% block title %}
+HomePage
+{% endblock %}
+
+{% block main %}
+
+<!-- Search form -->
+<h1>Welcome, {{ username }}!</h1>
+
+<h2>This is the homepage of your personal Diary</h2>
+<p>Here you can get in real-time the latest informations about the Covid-19's proliferation in your country or
+    elsewhere.</p>
+
+
+
+<form style="padding-bottom: 300px; padding-top: 100px;" action="/information" method="post"
+    class="form-inline d-flex justify-content-center md-form form-sm">
+    <h2 style="padding-bottom: 30px">Covid-19 Tracker in real-time</h2>
+    <input style="border-radius: 25px;" class="form-control form-control-sm mr-3 w-75" required autocomplete="off"
+        autofocus class="form-control" name="country" placeholder="Country">
+    <button class="btn btn-primary" type="submit"><i class="fas fa-search" aria-hidden="true"></i>
+    </button>
+    <p style="padding-top: 30px">Information provided by <a href="https://coronavirus.jhu.edu/">Johns Hopkins
+            Coronavirus Resource Center</a></p>
+
+</form>
+
+
+
+
+{% endblock %}

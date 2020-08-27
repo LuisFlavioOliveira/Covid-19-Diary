@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Write
+{% endblock %}
+
+{% block main %}
+
+<h1>Write a new entry in your diary.</h1>
+<p>Here you can write a new entry in your diary to keep track of the places you've been, who you've met and also how
+    were you feeling
+    that day. To use it, just select the date of the entry, the event (i.e. "I went to visit Bob and Emma"), the local
+    (i.e. "221B Baker Street, London"), how many people
+    you've met and how you were feeling.</p>
+
+<form action="/write" method="post">
+    <label for="dateInput">Date</label>
+    <div class="form-group">
+        <input autocomplete="off" required type="date" placeholder="yyyy-mm-dd" class="form-control" id="dateInput"
+            name="date">
+    </div>
+    <label for="event">Event</label>
+    <div class="form-group">
+        <input placeholder="Pizza with Bob" autocomplete="off" required type="text" class="form-control" id="event"
+            name="event">
+    </div>
+    <label for="local">Local</label>
+    <div class="form-group">
+        <input placeholder="Bob's house" autocomplete="off" required type="text" class="form-control" id="local"
+            name="local">
+    </div>
+    <label for="numberPeople">With how many people did you have direct contact?</label>
+    <div class="form-group">
+        <input required autocomplete="off" class="form-control" min="0" name="people" type="number">
+    </div>
+
+    <label for="feeling">How were you feeling?</label>
+    <div class="form-group">
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="option" required id="inlineRadio1" value="Good!">
+            <label class="form-check-label" for="inlineRadio1">Good!</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="option" required id="inlineRadio2" value="Not so good.">
+            <label class="form-check-label" for="inlineRadio2">Not so good.</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="option" required id="inlineRadio3" value="Sick!">
+            <label class="form-check-label" for="inlineRadio3">Sick!</label>
+        </div>
+    </div>
+    <button class="btn btn-primary" type="submit">Submit</button>
+</form>
+
+
+{% endblock %}

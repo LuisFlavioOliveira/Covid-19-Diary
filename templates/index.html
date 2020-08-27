@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="/static/hero.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- W3 School and Font-Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+
+    <title>Covid-19 Diary</title>
+
+
+    <!-- navigation bar -->
+    <nav class="w3-bar w3-black">
+        <a href="/login" class="w3-button w3-bar-item">Sign In</a>
+        <a href="/register" class="w3-button w3-bar-item">Register</a>
+    </nav>
+</head>
+
+
+<body>
+    <!-- Display flash message with Jinja -->
+    {% if get_flashed_messages() %}
+    <header>
+        <div class="alert alert-primary border text-center" role="alert">
+            {{ get_flashed_messages() | join(" ") }}
+        </div>
+    </header>
+    {% endif %}
+    <main>
+        <!-- Container of the index image -->
+        <div class="container-fluid hero pb-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 hero_title">
+                        <h1>Keep track of your movments and help in the fight against the Covid-19</h1>
+                    </div>
+                    <div class="col-md-6 hero_image">
+                        <img src="static/img/covid19_main_image.png"
+                            alt="Isolated COVID-19 virus in space. Illustration.">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Text -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 offset-md-1 welcome text-center">
+                    <h1 style="font-size: 35px;">Welcome to Covid-19 Diary!</h1>
+                    <p style="font-size: 20px;">
+                        Covid-19 Diary is a web application that allows users to keep track of their movements in zones
+                        where the Covid-19 is highly active. The application enables the user to write down all the
+                        locations where he/she has been in the last days and all the people he/she has seen as well date
+                        and
+                        hour.
+                    </p>
+                    <p style="font-size: 20px;">The Covid-19 Diary will provide a complete diary, where you will be able
+                        to follow all your movements and help in the fight against the Corona virus. The idea is simple:
+                        if you are infected, you can get in touch with the people you have had contact with and the
+                        places you have been to inform them that you are infected. On the other hand, if, eventually,
+                        you know that someone with whom you have recently been infected or that one of the places where
+                        you have been has been found to have a case of Covid-19, you can take precautions as if you were
+                        infected. The idea is exactly to help us to prevent the spread of the virus through simple
+                        actions that depend only on ourselves, without governments or companies watching us.</p>
+
+                    <h2 style="font-size: 35px;">Instructions</h2>
+                    <p style="font-size: 20px;">To use it, you need to first <a style="color: blue;"
+                            href="/register">create an
+                            account</a> with a valid email. The register is necessary to help us protect all your
+                        data on our database. All the information provided by the user is encrypted, like that no
+                        one, not even us, can have access to the information you write down in your diary. </p>
+
+                    <p style="font-size: 20px;">After you created an account, you can access your diary and start
+                        writting. You can also get the latest information and statistics about the Covid-19 in your
+                        country. We highly recommend the users to check this area frequently, to always be aware of
+                        what's going on in their country. All the information is provided and updated in real time by <a
+                            style="color: blue;" href="https://coronavirus.jhu.edu/">Johns Hopkins Coronavirus Resource
+                            Center</a></p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+        <a href="#"><i class="fa fa-facebook-official"></i></a>
+        <a href="#"><i class="fa fa-pinterest-p"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-flickr"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <p class="w3-medium">
+            Powered by Luis
+        </p>
+    </footer>
+</body>
+
+</html>

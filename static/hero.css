@@ -1,0 +1,295 @@
+element.style {}
+
+.pb-4,
+.py-4 {
+    padding-bottom: 1.5rem !important;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.hero {
+    padding: 0;
+    margin-bottom: 40px;
+    background-image: url(data:image/svg+xml;charset=utf8,%3Csvg width="1351" height="443" viewBox="0 0 1351 443" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M4.00002 155L2.92832 157.928L0 158.999L2.92832 160.071L4.00002 163L5.0709 160.071L8.00003 159V158.999L5.0709 157.928L4.00083 155H4.00002Z" fill="%23F99D78"/%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M224 196L222.66 199.66L219 200.999L222.66 202.339L224 206L225.339 202.339L229 201V200.999L225.339 199.66L224.001 196H224Z" fill="%23F99D78"/%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M1346 398L1344.66 401.66L1341 402.999L1344.66 404.339L1346 408L1347.34 404.339L1351 403V402.999L1347.34 401.66L1346 398H1346Z" fill="%237D728E"/%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M1219.5 -6.10352e-05L1217.49 5.49054L1212 7.49845L1217.49 9.50788L1219.5 15L1221.51 9.50788L1227 7.49997V7.49845L1221.51 5.49054L1219.5 -6.10352e-05H1219.5Z" fill="%23CDDCE6"/%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M1240.5 428L1238.49 433.491L1233 435.499L1238.49 437.508L1240.5 443L1242.51 437.508L1248 435.5V435.499L1242.51 433.491L1240.5 428H1240.5Z" fill="%237D728E"/%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M1330 96L1328.93 98.9283L1326 99.9992L1328.93 101.071L1330 104L1331.07 101.071L1334 100V99.9992L1331.07 98.9283L1330 96H1330Z" fill="%237D728E"/%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M592 358L590.66 361.66L587 362.999L590.66 364.339L592 368L593.339 364.339L597 363V362.999L593.339 361.66L592.001 358H592Z" fill="%23F99D78"/%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M935 0L933.66 3.6604L930 4.99901L933.66 6.33862L935 10L936.339 6.33862L940 5.00002V4.99901L936.339 3.6604L935.001 0H935Z" fill="%23F99D78"/%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M786 81L785.196 83.1962L783 83.9994L785.196 84.8032L786 87L786.803 84.8032L789 84V83.9994L786.803 83.1962L786.001 81H786Z" fill="%23F99D78"/%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M487 21L485.928 23.9283L483 24.9992L485.928 26.0709L487 29L488.071 26.0709L491 25V24.9992L488.071 23.9283L487.001 21H487Z" fill="%237D728E"/%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M1175 261L1173.66 264.66L1170 265.999L1173.66 267.339L1175 271L1176.34 267.339L1180 266V265.999L1176.34 264.66L1175 261H1175Z" fill="%237D728E"/%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M819 196L817.66 199.66L814 200.999L817.66 202.339L819 206L820.339 202.339L824 201V200.999L820.339 199.66L819.001 196H819Z" fill="%237D728E"/%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M25.5 336L23.4906 341.491L18 343.499L23.4906 345.508L25.5 351L27.5079 345.508L33.0001 343.5V343.499L27.5079 341.491L25.5015 336H25.5Z" fill="%237D728E"/%3E%3C/svg%3E);
+    background-color: #1c272b;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    width: auto;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+* {
+    font-family: Roboto;
+}
+
+user agent stylesheet div {
+    display: block;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+.hero .hero_title h1 {
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 70px;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto
+}
+
+.hero .hero_title {
+    color: #fff;
+    padding-top: 6rem
+}
+
+@media (max-width:1146px) {
+    .hero .hero_title {
+        padding-top: 1rem
+    }
+}
+
+.hero .hero_title h1 {
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 70px
+}
+
+@media (max-width:600px) {
+    .hero .hero_title h1 {
+        font-size: 40px;
+        line-height: 1.4
+    }
+}
+
+@media (max-width:990px) {
+    .hero .hero_title {
+        padding: 30px 24px
+    }
+}
+
+.hero .hero_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0
+}
+
+.col,
+.col-1,
+.col-10,
+.col-11,
+.col-12,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-auto,
+.col-lg,
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-auto,
+.col-md,
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-auto,
+.col-sm,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-auto,
+.col-xl,
+.col-xl-1,
+.col-xl-10,
+.col-xl-11,
+.col-xl-12,
+.col-xl-2,
+.col-xl-3,
+.col-xl-4,
+.col-xl-5,
+.col-xl-6,
+.col-xl-7,
+.col-xl-8,
+.col-xl-9,
+.col-xl-auto {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media (min-width: 768px) .offset-md-1 {
+    margin-left: 8.333333%;
+}
+
+@media (min-width: 768px) .welcome {
+    padding: 0 80px;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.footer {
+    background-color: #1c272b;
+    color: #fff;
+    list-style-type: none;
+    padding: 80px 40px;
+}
+
+#footer__social {
+    text-align: center;
+}
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+    display: block;
+}
+
+.footer .column__links {
+    list-style-type: none;
+    margin: 0 0 16px;
+    padding-left: 0;
+    font-size: 14px;
+}
+
+.list-inline-item {
+    display: inline-block;
+}
+
+.footer .column__links a {
+    color: #fff;
+    display: block;
+    line-height: 1.6;
+    padding: 8px 8px 8px 0;
+    text-decoration: none;
+}
+
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+@media (min-width: 576px) .col-sm-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+#footer__social {
+    text-align: center;
+}

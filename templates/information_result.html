@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Covid-19 Informations
+{% endblock %}
+
+{% block main %}
+
+
+    <h1>{{ country }}</h1>
+    <div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Current Number of Active Cases</th>
+                <th scope="col">Total Deaths</th>
+                <th scope="col">New Deaths</th>
+                <th scope="col">Total Recovered</th>
+                <th scope="col">Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ active_cases }}</td>
+                <td>{{ total_deaths }}</td>
+                <td>{{ new_deaths }}</td>
+                <td>{{ total_recovered }}</td>
+                <td>{{ date }}</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+
+
+    <img src="{{ image_url }}">
+
+{% endblock %}
